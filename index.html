@@ -3,163 +3,174 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Thabiso | Portfolio</title>
 
 <style>
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Inter,Arial,sans-serif;background:#081a4a;color:#f7f8ff;line-height:1.6;padding-left:230px}
+a{text-decoration:none;color:inherit}
+
+.sidebar{
+position:fixed;
+left:0;
+top:0;
+width:230px;
+height:100vh;
+background:#06153d;
+border-right:1px solid #3159a8;
+padding:35px 22px;
+z-index:20
 }
 
-body {
-  font-family: Arial, sans-serif;
-  background: #081a4a;
-  color: white;
-  line-height: 1.6;
+.sidebar h2{
+color:#fff;
+margin-bottom:30px
 }
 
-.hero {
-  min-height: 100vh;
-  padding: 100px 7%;
-  background:
-    radial-gradient(circle at 75% 30%, #e52b3f 0, transparent 34%),
-    radial-gradient(circle at 15% 70%, #124bc4 0, transparent 34%),
-    linear-gradient(135deg, #071b55, #a50f25);
+.sidebar h2 span{
+color:#ff3b3b
 }
 
-.hero-inner {
-  max-width: 850px;
+.sidebar a{
+display:block;
+padding:13px 14px;
+margin:8px 0;
+border-radius:12px;
+color:#c9cce0
 }
 
-.hero h1 {
-  font-size: clamp(3rem, 8vw, 6.5rem);
-  margin-bottom: 25px;
+.sidebar a:hover{
+background:#0d3b99;
+color:white
 }
 
-.hero h1 span {
-  color: #124bc4;
+.nav{
+position:fixed;
+top:0;
+width:100%;
+padding:18px 7%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(8,26,74,.8);
+backdrop-filter:blur(12px);
+z-index:10
 }
 
-.hero p {
-  max-width: 650px;
-  color: #eef1ff;
-  font-size: 1.15rem;
+.logo{
+font-size:1.3rem;
+font-weight:800
 }
 
-.section {
-  padding: 90px 0;
+.logo span{
+color:#ff3b3b
 }
 
-.section h2 {
-  font-size: 2.4rem;
-  margin-bottom: 25px;
+.links{
+display:flex;
+gap:24px;
+font-size:.95rem;
+color:#c9cce0
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
+.links a:hover{
+color:white
 }
 
-.card {
-  background: #0b235f;
-  border: 1px solid #3159a8;
-  border-radius: 20px;
-  padding: 25px;
+.hero{
+min-height:100vh;
+display:flex;
+align-items:center;
+padding:110px 7% 70px;
+background:
+radial-gradient(circle at 75% 30%,#e52b3f 0,transparent 34%),
+radial-gradient(circle at 15% 70%,#124bc4 0,transparent 34%),
+linear-gradient(135deg,#071b55,#a50f25)
 }
 
-.card h3 {
-  margin-bottom: 8px;
+.hero-inner{
+max-width:850px
 }
 
-.card p {
-  color: #d7dcf2;
+.tag{
+display:inline-block;
+padding:8px 14px;
+border:1px solid #3c4261;
+border-radius:999px;
+color:#bfc4e8;
+background:#151a31;
+margin-bottom:22px
 }
 
-@media (max-width: 800px) {
-  .grid {
-    grid-template-columns: 1fr;
-  }
+.hero h1{
+font-size:clamp(3rem,8vw,6.5rem);
+line-height:.95;
+letter-spacing:-.06em;
+margin-bottom:25px
 }
-</style>
-</head>
 
-<body>
+.hero h1 span{
+color:#124bc4
+}
 
-<header class="hero">
-<div class="hero-inner">
+.hero p{
+max-width:650px;
+color:#eef1ff;
+font-size:1.15rem
+}
 
-<h1><span>Thabiso</span></h1>
+.buttons{
+display:flex;
+gap:14px;
+margin-top:30px;
+flex-wrap:wrap
+}
 
-<p>
-Hi, I’m Thabiso! I’m a creative and active person who enjoys riding bikes,
-playing with friends, creating content on Snapchat, making art projects,
-and playing Car Parking Multiplayer.
-</p>
+.btn{
+padding:13px 20px;
+border-radius:12px;
+background:#e52b3f;
+color:#fff;
+font-weight:700
+}
 
-<section class="section">
+.btn.alt{
+background:#0d3b99;
+border:1px solid #4167b8
+}
 
-<h2>About Me</h2>
+.section{
+padding:90px 7%
+}
 
-<div class="grid">
-<div class="card">
-<h3>🏍️ Hobby</h3>
-<p>Riding bikes</p>
-</div>
+.section h2{
+font-size:2.4rem;
+margin-bottom:12px
+}
 
-<div class="card">
-<h3>👥 Free Time</h3>
-<p>I like playing with my friends.</p>
-</div>
+.section>p{
+color:#d7dcf2;
+max-width:680px;
+margin-bottom:35px
+}
 
-<div class="card">
-<h3>🎮 Favorite Game</h3>
-<p>Car Parking Multiplayer</p>
-</div>
+.grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:18px
+}
 
-<div class="card">
-<h3>🇬🇧 Skill</h3>
-<p>Good at English</p>
-</div>
+.card{
+background:#0b235f;
+border:1px solid #3159a8;
+border-radius:20px;
+padding:25px
+}
 
-<div class="card">
-<h3>🇫🇷 French</h3>
-<p>I am learning French and I can speak it.</p>
-</div>
+.card h3{
+margin-bottom:8px
+}
 
-<div class="card">
-<h3>📱 Snapchat Creator</h3>
-<p>
-My Snapchat account is <strong>iconic_thabz</strong>
-and has about 101 followers.
-</p>
-</div>
-
-<div class="card">
-<h3>🌟 Snapchat Group</h3>
-<p>
-I have a Snapchat group called <strong>infuncercity</strong>
-with about 200 followers.
-</p>
-</div>
-
-<div class="card">
-<h3>🏃 Certificates</h3>
-<p>My certificates are from running and reading.</p>
-</div>
-
-<div class="card">
-<h3>🎨 Art Projects</h3>
-<p>I have made art projects and enjoy being creative.</p>
-</div>
-
-</div>
-</section>
-
-</div>
-</header>
-
-</body>
-</html>
+.card p{
+color:#d7dcf2
+}

@@ -3,42 +3,58 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Thabiso | Portfolio</title>
 
 <style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: Arial, sans-serif;
-  background: #0b1020;
+  background: #081a4a;
   color: white;
-  margin: 0;
+  line-height: 1.6;
 }
 
 .hero {
   min-height: 100vh;
   padding: 100px 7%;
-  background: #0b1020;
+  background:
+    radial-gradient(circle at 75% 30%, #e52b3f 0, transparent 34%),
+    radial-gradient(circle at 15% 70%, #124bc4 0, transparent 34%),
+    linear-gradient(135deg, #071b55, #a50f25);
+}
+
+.hero-inner {
+  max-width: 850px;
 }
 
 .hero h1 {
-  font-size: 70px;
+  font-size: clamp(3rem, 8vw, 6.5rem);
+  margin-bottom: 25px;
 }
 
 .hero h1 span {
-  color: #9b8cff;
+  color: #124bc4;
 }
 
 .hero p {
   max-width: 650px;
-  color: #b8bdd3;
-  font-size: 18px;
+  color: #eef1ff;
+  font-size: 1.15rem;
 }
 
 .section {
-  padding: 60px 0;
+  padding: 90px 0;
 }
 
 .section h2 {
-  font-size: 38px;
+  font-size: 2.4rem;
+  margin-bottom: 25px;
 }
 
 .grid {
@@ -48,8 +64,8 @@ body {
 }
 
 .card {
-  background: #12182b;
-  border: 1px solid #29314e;
+  background: #0b235f;
+  border: 1px solid #3159a8;
   border-radius: 20px;
   padding: 25px;
 }
@@ -59,7 +75,7 @@ body {
 }
 
 .card p {
-  color: #aeb4ca;
+  color: #d7dcf2;
 }
 
 @media (max-width: 800px) {
@@ -73,72 +89,18 @@ body {
 <body>
 
 <header class="hero">
+<div class="hero-inner">
 
-  <h1><span>Thabiso</span></h1>
+<h1><span>Thabiso</span></h1>
 
-  <p>
-    Hi, I’m Thabiso! I’m a creative and active person who enjoys riding bikes,
-    playing with friends, creating content on Snapchat, making art projects,
-    and playing Car Parking Multiplayer.
-  </p>
+<p>
+Hi, I’m Thabiso! I’m a creative and active person who enjoys riding bikes,
+playing with friends, creating content on Snapchat, making art projects,
+and playing Car Parking Multiplayer.
+</p>
 
-  <section class="section">
+<section class="section">
 
-    <h2>About Me</h2>
+<h2>About Me</h2>
 
-    <div class="grid">
-
-      <div class="card">
-        <h3>🏍️ Hobby</h3>
-        <p>Riding bikes</p>
-      </div>
-
-      <div class="card">
-        <h3>👥 Free Time</h3>
-        <p>I like playing with my friends.</p>
-      </div>
-
-      <div class="card">
-        <h3>🎮 Favorite Game</h3>
-        <p>Car Parking Multiplayer</p>
-      </div>
-
-      <div class="card">
-        <h3>🇬🇧 Skill</h3>
-        <p>Good at English</p>
-      </div>
-
-      <div class="card">
-        <h3>📱 Snapchat Creator</h3>
-        <p>
-          My Snapchat account is <strong>iconic_thabz</strong>
-          and has about 101 followers.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>🌟 Snapchat Group</h3>
-        <p>
-          I have a Snapchat group called <strong>infuncercity</strong>
-          with about 200 followers.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>🏃 Certificates</h3>
-        <p>My certificates are from running and reading.</p>
-      </div>
-
-      <div class="card">
-        <h3>🎨 Art Projects</h3>
-        <p>I have made art projects and enjoy being creative.</p>
-      </div>
-
-    </div>
-
-  </section>
-
-</header>
-
-</body>
-</html> 
+<div class="grid">
